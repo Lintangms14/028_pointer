@@ -22,3 +22,7 @@ public:
 void siswa::displayAll(orang& a) {
 	cout << id << endl << a.nama;
 }
+
+void siswa::setid(int pid) {
+	id = pid;
+}
