@@ -13,10 +13,16 @@ void mahasiswa::shownim() {						//implementasi method di luar class
 
 int main()
 {
-	mahasiswa mhs{ 1 };
+	mahasiswa mhs{ 1 };							//object mhs
+	mhs.shownim();								//member acces opreator
+
+	mahasiswa& ref = mhs;						//pointer references refmhs
+	ref.nim = 2;								//member acces operator
 	mhs.shownim();
 
-	mahasiswa& ref = mhs;
-	ref.nim = 2;
+	mahasiswa* pmhs = &mh;						//pointer dereference pmhs
+	pmhs->nim = 3;								//Arrow operator
 	mhs.shownim();
+	system("pause");
+	return 0;
 }
