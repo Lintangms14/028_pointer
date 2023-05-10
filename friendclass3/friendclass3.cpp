@@ -6,7 +6,7 @@ class pelajar;
 
 class manusia {
 public:
-	void showNilaiPelajar(pelajar);
+	void showNilaiPelajar(pelajar&);
 };
 
 class pelajar {
@@ -16,6 +16,6 @@ public:
 	pelajar() {
 		nilai = 100;
 	}
-	friend void shiwNilaiPelajar(pelajar& x);
+	friend void manusia::showNilaiPelajar(pelajar& x);
 };
 
