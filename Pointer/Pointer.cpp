@@ -10,3 +10,9 @@ public:
 void mahasiswa::shownim() {						//implementasi method di luar class
 	cout << "No Induk = " << nim << endl;
 }
+
+int main()
+{
+	mahasiswa mhs{ 1 };
+	mhs.shownim();
+}
